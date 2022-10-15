@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+}
+
+/* LEFT PANE  */
+.left-pane {
+  font-size: 12px;
+  padding: 20px;
+  background-color: #f6f6f6;
+  border-right: 0.1px solid #97befd;
+}
+.logo {
+  height: 160px;
+  width: auto;
+  width: auto;
+  margin-bottom: 30px;
+  margin-left: -10px;
+}
+
+.aside-link-title {
+  color: #54595d;
+  display: inline-block;
+  border-bottom: 1px solid #54595d;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.aside-link {
+  margin-bottom: 20px;
+}
+
+.aside-link li {
+  margin-bottom: 3px;
+}
+
+.aside-link li:last-child {
+  margin-bottom: 0;
+}
+
+.aside-link li a:link,
+.aside-link li a:visited {
+  color: #0645ad;
+}
+
+.aside-link li a:hover {
+  text-decoration: underline;
+}
+
+.aside-link li a:active {
+  color: #072049;
+}
+
+/* PAGE MAIN CONTENT  */
+.container-content {
+  flex-grow: 1;
+}
+/* HEADER  */
+
+header {
+  padding: 10px;
+  background-color: #f6f6f6;
+  height: 90px;
+  border-bottom: 1px solid #97befd;
+}
+
+.account-action {
+  font-size: 12px;
+  display: flex;
+  justify-content: flex-end;
+  height: 20px;
+  align-items: center;
+}
+
+.account-action li {
+  margin-right: 10px;
+}
+
+.account-action li:first-child {
+  margin-right: 3px;
+}
+
+.account-action li:last-child {
+  margin-right: 0;
+}
+
+.account-action li a:active,
+.account-action li a:visited {
+  color: #0645ad;
+}
+
+.account-action li a:hover {
+  text-decoration: underline;
+}
+
+.svg-person {
+  height: 15px;
+  color: #54595d;
+}
+
+#not-logged-in:active,
+#not-logged-in:visited {
+  color: #54595d;
+}
+
+/* NAVIGATION MAIN  */
+.nav-container {
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.nav-container a {
+  margin-right: 20px;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: flex-end;
+}
+
+.nav-right {
+  position: relative;
+}
+
+input {
+  width: 280px;
+  height: 30px;
+}
+
+.search-icon {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 20px;
+}
+
+.nav-left a:link,
+.nav-left a:visited,
+.nav-right a:link,
+.nav-right a:visited {
+  color: #0645ad;
+}
+
+.nav-left a:hover,
+.nav-right a:hover {
+  text-decoration: underline;
+}
+
+/* MAIN CONTENT */
+
+main {
+  text-align: center;
+  padding: 20px;
+}
+
+.main-heading {
+  padding: 15px;
+  border: 1px solid #ddd;
+  background-color: #f6f6f6;
+  margin-bottom: 10px;
+}
+
+.main-heading h1 {
+  font-size: 22px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.main-heading p {
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/*SECTIONS GENERIC */
+
+section {
+  font-size: 14px;
+}
+
+section p {
+  line-height: 1.5;
+}
+
+/* SECTION 1  */
+/* SECTION1 LEFT  */
+.section1-left {
+  background-color: #f5fffa;
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: 55.6%;
+  float: left;
+  margin-right: 0.4%;
+}
+
+.section1-left-content h2 {
+  font-size: 17px;
+  padding: 6px;
+  background-color: #cef2e0;
+  border: 1px solid #aaa;
+  text-align: start;
+  margin-bottom: 10px;
+}
+
+.section1-left-content .img-content {
+  width: 165px;
+  float: left;
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.section1-left-content img {
+  width: 100%;
+}
+
+.section1-left-content .img-desc {
+  float: left;
+}
+
+.section1-left-content p {
+  text-align: start;
+  /* margin-bottom: 10px; */
+}
+
+.align-right-ul {
+  text-align: end;
+  line-height: 1.5;
+  /* margin-top: 10px; */
+}
+
+.align-right-ul li {
+  display: inline-block;
+  list-style-type: disc;
+}
+
+/* SECTION1 RIGHT  */
+
+.section1-right {
+  background-color: #f5faff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: 44%;
+  float: left;
+}
+
+.section1-right-content h2 {
+  font-size: 17px;
+  padding: 6px;
+  background-color: #cedff2;
+  border: 1px solid #aaa;
+  text-align: start;
+  margin-bottom: 10px;
+}
+
+.section1-right-content .img-content {
+  width: 122px;
+  float: right;
+  margin-left: 10px;
+  font-size: 12px;
+  text-align: start;
+}
+
+.section1-right-content img {
+  width: 100%;
+}
+
+.section1-right-ul {
+  text-align: start;
+  list-style: disc;
+  margin-bottom: 10px;
+}
+
+.section1-right-ul li {
+  list-style: disc;
+  margin-left: 20px;
+  line-height: 1.5;
+}
+
+.align-left-ul {
+  text-align: start;
+}
+
+.align-left-ul li {
+  display: inline;
+  line-height: 1.5;
+}
+
+.align-left-ul p {
+  text-align: right;
+  margin-top: 11px;
+}
+
+.align-left-para {
+  text-align: left;
+  margin-bottom: 10px;
+}
